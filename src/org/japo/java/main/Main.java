@@ -15,6 +15,7 @@
  */
 package org.japo.java.main;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /**
@@ -29,6 +30,7 @@ public class Main {
     public static void main(String[] args) {
         // Instanciar Scanner
         Scanner scn = new Scanner(System.in, "ISO-8859-1");
+        scn.useLocale(Locale.ENGLISH);
 
         // Variable
         String nombre;
@@ -38,6 +40,6 @@ public class Main {
         nombre = scn.nextLine();
 
         // Mensaje
-        System.out.printf("Me llamo .................: %s\n", nombre);
+        System.out.printf("Me llamo .................: %s%n", nombre);
     }
 }
