@@ -24,20 +24,21 @@ import java.util.Scanner;
  */
 public class Main {
 
+    // Instanciar Scanner
+    public static final Scanner SCN
+            = new Scanner(System.in, "ISO-8859-1")
+                    .useLocale(Locale.ENGLISH).useDelimiter("\\s+");
+
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Instanciar Scanner
-        Scanner scn = new Scanner(System.in, "ISO-8859-1");
-        scn.useLocale(Locale.ENGLISH);
-
         // Variable
         String nombre;
 
         // Leer dato
         System.out.print("Me llamo .................: ");
-        nombre = scn.nextLine();
+        nombre = SCN.nextLine();
 
         // Mensaje
         System.out.printf("Me llamo .................: %s%n", nombre);
